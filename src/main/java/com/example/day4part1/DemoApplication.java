@@ -34,9 +34,11 @@ public class DemoApplication {
         //Skip empty line after draw line.
         scanner.nextLine();
 
+        //Creates a bingo board object and an array of its numbers (bingoBoardNumbers). Object's
+        //constructor creates a rows array and column array using bingoBoardNumbers. Adds bingo board object to an
+        //array to point to later.
         ArrayList<BingoBoard> bingoBoardArray = new ArrayList<>();
 
-        int numberOfBingoBoards = 0;
         for (int i = 0; i < lines - 1; i+=6){
             ArrayList<Integer> bingoBoardNumbers = new ArrayList<>();
             for (int j = 0; j < 5; ++j) {
